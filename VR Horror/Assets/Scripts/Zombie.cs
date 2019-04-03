@@ -7,7 +7,7 @@ public class Zombie : MonoBehaviour
     public float health;
    // public float speed;
     public float damage;
-    public 
+ 
 
     // Start is called before the first frame update
     void Start()
