@@ -1,6 +1,6 @@
 %YAML 1.1
 %TAG !u! tag:unity3d.com,2011:
---- !u!1 &1546419924
+--- !u!1 &9071649698851931365
 GameObject:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -8,10 +8,9 @@ GameObject:
   m_PrefabAsset: {fileID: 0}
   serializedVersion: 6
   m_Component:
-  - component: {fileID: 5315167756820546850}
-  - component: {fileID: 8166477741608174039}
-  - component: {fileID: 2704261926280145251}
-  - component: {fileID: 1546419925}
+  - component: {fileID: 9071649698852296901}
+  - component: {fileID: 9071649698853066981}
+  - component: {fileID: 9071649698854197797}
   m_Layer: 0
   m_Name: default
   m_TagString: Untagged
@@ -19,35 +18,35 @@ GameObject:
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
   m_IsActive: 1
---- !u!4 &5315167756820546850
+--- !u!4 &9071649698852296901
 Transform:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1546419924}
+  m_GameObject: {fileID: 9071649698851931365}
   m_LocalRotation: {x: 0, y: -0, z: -0, w: 1}
   m_LocalPosition: {x: -0, y: 0, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
-  m_Father: {fileID: 6010629029974697220}
+  m_Father: {fileID: 9071649698852296903}
   m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!33 &8166477741608174039
+--- !u!33 &9071649698853066981
 MeshFilter:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1546419924}
-  m_Mesh: {fileID: 4300000, guid: 60f3c2181c52c14418d42b50e9538c81, type: 3}
---- !u!23 &2704261926280145251
+  m_GameObject: {fileID: 9071649698851931365}
+  m_Mesh: {fileID: 4300000, guid: fc68b7534b3a289409c68e1e534546c8, type: 3}
+--- !u!23 &9071649698854197797
 MeshRenderer:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1546419924}
+  m_GameObject: {fileID: 9071649698851931365}
   m_Enabled: 1
   m_CastShadows: 1
   m_ReceiveShadows: 1
@@ -58,7 +57,7 @@ MeshRenderer:
   m_RenderingLayerMask: 1
   m_RendererPriority: 0
   m_Materials:
-  - {fileID: 2100000, guid: 60f3c2181c52c14418d42b50e9538c81, type: 3}
+  - {fileID: 2100000, guid: 01f343507edc4724484924e864f908ad, type: 2}
   m_StaticBatchInfo:
     firstSubMesh: 0
     subMeshCount: 0
@@ -78,21 +77,7 @@ MeshRenderer:
   m_SortingLayerID: 0
   m_SortingLayer: 0
   m_SortingOrder: 0
---- !u!136 &1546419925
-CapsuleCollider:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1546419924}
-  m_Material: {fileID: 0}
-  m_IsTrigger: 0
-  m_Enabled: 1
-  m_Radius: 0.674331
-  m_Height: 2.842475
-  m_Direction: 1
-  m_Center: {x: 0.1, y: 1.4212375, z: 0.061321482}
---- !u!1 &7714195361940369077
+--- !u!1 &9071649698851931367
 GameObject:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -100,7 +85,7 @@ GameObject:
   m_PrefabAsset: {fileID: 0}
   serializedVersion: 6
   m_Component:
-  - component: {fileID: 6010629029974697220}
+  - component: {fileID: 9071649698852296903}
   m_Layer: 0
   m_Name: Horror_Tree3
   m_TagString: Untagged
@@ -108,18 +93,18 @@ GameObject:
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
   m_IsActive: 1
---- !u!4 &6010629029974697220
+--- !u!4 &9071649698852296903
 Transform:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 7714195361940369077}
+  m_GameObject: {fileID: 9071649698851931367}
   m_LocalRotation: {x: 0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: 51.687927, y: -20.887062, z: -33.883163}
-  m_LocalScale: {x: 2.5, y: 2.5, z: 2.5}
+  m_LocalPosition: {x: -94.82553, y: -5.57, z: 115.86292}
+  m_LocalScale: {x: 1.8592385, y: 1.8592385, z: 1.8592385}
   m_Children:
-  - {fileID: 5315167756820546850}
+  - {fileID: 9071649698852296901}
   m_Father: {fileID: 0}
   m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}

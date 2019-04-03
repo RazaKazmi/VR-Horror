@@ -5,7 +5,7 @@
       "app_key": "application.generated.unity.vrhorror.exe",
       "launch_type": "url",
       "url": "steam://launch/",
-      "action_manifest_path": "C:\\Users\\Undergrad Lab\\Desktop\\PLZ no touchy\\VR-Horror-Vive-Trackers\\VR Horror\\actions.json",
+      "action_manifest_path": "C:\\Users\\Undergrad Lab\\Desktop\\Raza Repo\\VR-Horror\\VR Horror\\actions.json",
       "strings": {
         "en_us": {
           "name": "VR Horror [Testing]"
