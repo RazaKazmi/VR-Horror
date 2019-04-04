@@ -10,22 +10,26 @@ public class Zombie : MonoBehaviour
     public float damage;
 
     private Animator anim;
- 
+    GameObject player;
+
 
     // Start is called before the first frame update
     void Start()
     {
+        player = GameObject.FindGameObjectWithTag("Player");
         anim = GetComponent<Animator>();
     }
 
     // Update is called once per frame
     void Update()
     {
+        //death
         if(health <= 0)
         {
             gameObject.GetComponent<NavMeshAgent>().speed = 0;
             anim.SetTrigger("Death");
             Destroy(gameObject, 2.5f);
+            player.GetComponent<Player>().score += 100;
         }
     }
 
