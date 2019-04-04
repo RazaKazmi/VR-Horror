@@ -11,7 +11,7 @@ public class ZombieMovement : MonoBehaviour
 
     private void Awake()
     {
-        player = GameObject.FindGameObjectWithTag("Player").transform;
+        player = GameObject.FindGameObjectWithTag("PlayerPosition").transform;
         nav = GetComponent<NavMeshAgent>();
     }
 

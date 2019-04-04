@@ -8,9 +8,12 @@ public class Zombie : MonoBehaviour
     public float health;
    // public float speed;
     public float damage;
+    public float minSpeed, maxSpeed;
+    private float speed;
 
     private Animator anim;
     GameObject player;
+    private NavMeshAgent agent;
 
 
     // Start is called before the first frame update
@@ -18,6 +21,11 @@ public class Zombie : MonoBehaviour
     {
         player = GameObject.FindGameObjectWithTag("Player");
         anim = GetComponent<Animator>();
+        agent = GetComponent<NavMeshAgent>();
+
+        speed = Random.Range(minSpeed, maxSpeed);
+        agent.speed = speed;
+
     }
 
     // Update is called once per frame
@@ -29,7 +37,7 @@ public class Zombie : MonoBehaviour
             gameObject.GetComponent<NavMeshAgent>().speed = 0;
             anim.SetTrigger("Death");
             Destroy(gameObject, 2.5f);
-            player.GetComponent<Player>().score += 100;
+
         }
     }
 
@@ -43,6 +51,27 @@ public class Zombie : MonoBehaviour
             //if (GetComponent<Animator>().GetCurrentAnimatorStateInfo(0).IsName("Punch"))
 
 
+        }
+    }
+
+    private void OnDestroy()
+    {
+        player.GetComponent<Player>().score += 100;
+    }
+
+    private void OnCollisionEnter(Collision other)
+    {
+
+          
+    }
+
+    private void OnTriggerEnter(Collider other)
+    {
+        if (other.tag == "Bullet")
+        {
+        Debug.Log("Zombie hit");
+        health -= other.GetComponent<Bullet>().damage;
+        Destroy(other.gameObject);
         }
     }
 
